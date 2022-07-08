@@ -1,0 +1,17 @@
+.link {
+    color: #FFFBFA;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.link:hover, .selected {
+    color: #9f9f9f;
+}
+
+.logo-brand {
+    height: 7vmin;
+}
+
+.nav-round-bottom {
+    border-radius: 0 0 15px 15px;
+}

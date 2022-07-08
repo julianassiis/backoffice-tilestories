@@ -7,7 +7,7 @@ import Button from "react-bootstrap/Button";
 import Card from 'react-bootstrap/Card';
 import {Link} from "react-router-dom";
 
-function TileRequest() {
+function NewTileRequest() {
     return (
         <div className="App min-vh-100 fw-light">
             {Navigation()}
@@ -22,7 +22,7 @@ function TileRequest() {
             {/*div que aparece quando há pedidos*/}
             <div>
                 <header className="pt-5 text-center">
-                    <h4 className="fw-bolder mt-1">name of existing tilee</h4>
+                    <h4 className="fw-bolder mt-1">unknown tile</h4>
                 </header>
 
                 <div className="container d-flex justify-content-around mb-3 pb-5 mt-5 pt-1">
@@ -75,4 +75,4 @@ function TileRequest() {
     );
 }
 
-export default TileRequest;
+export default NewTileRequest;

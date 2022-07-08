@@ -1,8 +1,10 @@
 import logo_branco from '../images/logo_ts_branco.png';
 import security from '../images/security_ilu.png';
-import '../css/login.css';
+import '../css/App.css';
+import '../css/Login.css';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import {Link} from 'react-router-dom';
 
 function Login() {
 
@@ -28,12 +30,16 @@ function Login() {
                             <Form.Label className="mb-1">password</Form.Label>
                             <Form.Control className="form-round mb-5 p-2 fw-light" type="password"/>
                         </Form.Group>
+
                         {/*<Form.Text className="text-muted mb-3 fst-italic">
                             forgot password?
                         </Form.Text>*/}
-                        <Button className="btn-lightblue fw-light p-2 w-100 d-block mt-5" variant="primary" type="submit">
-                            login
-                        </Button>
+
+                        <Link to="/req">
+                            <Button className="btn-lightblue fw-light p-2 w-100 d-block mt-5" variant="primary" type="submit">
+                                login
+                            </Button>
+                        </Link>
                     </Form>
                 </div>
             </div>

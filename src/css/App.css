@@ -1,0 +1,36 @@
+.App {
+    background-color: #FFFBFA;
+    color: #111111;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.App-header {
+    text-align: center;
+}
+
+.App-logo {
+    height: 10vmin;
+}
+
+.bg-darkblue {
+    background-color: #151F6D;
+    color: #FFFBFA;
+}
+
+.bg-lightblue {
+    background-color: #5C75DD;
+    color: #FFFBFA;
+}
+
+.bg-yello {
+    background-color: #F5BB38;
+}
+
+.bg-cream {
+    background-color: #FFFBFA;
+    color: #111111;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,44 @@
+.tile-rounded {
+    border-radius: 15px;
+}
+
+.btn-deny {
+    background-color: #de3741;
+    color: #FFFBFA;
+    border-color: #de3741;
+    border-radius: 15px;
+}
+
+.btn-deny:hover {
+    background-color: #FFFBFA;
+    border: 1px solid #de3741;
+    color: #de3741;
+}
+
+.btn-deny:focus{
+    box-shadow: none;
+    background-color: #de3741;
+    color: #FFFBFA;
+    border-color: #de3741;
+}
+
+.btn-accept {
+    background-color: #07af51;
+    color: #FFFBFA;
+    border-color: #07af51;
+    border-radius: 15px;
+}
+
+.btn-accept:hover {
+    background-color: #FFFBFA;
+    border: 1px solid #07af51;
+    color: #07af51;
+}
+
+.btn-accept:focus{
+    box-shadow: none;
+    background-color: #07af51;
+    color: #FFFBFA;
+    border-color: #07af51;
+}
+
