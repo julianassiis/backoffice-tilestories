@@ -3,7 +3,7 @@ import {Route, Routes as Switch} from 'react-router-dom';
 import Login from './components/Login';
 import Requests from './components/Requests';
 import TileRequest from './components/TileRequest';
-import NewTileRequest from './components/TileRequest';
+import NewTileRequest from './components/NewTileRequest';
 
 export default function Routes() {
     return (

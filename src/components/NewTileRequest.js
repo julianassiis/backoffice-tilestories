@@ -6,6 +6,7 @@ import Navigation from './Navigation';
 import Button from "react-bootstrap/Button";
 import Card from 'react-bootstrap/Card';
 import {Link} from "react-router-dom";
+import Form from "react-bootstrap/Form";
 
 function NewTileRequest() {
     return (
@@ -23,19 +24,22 @@ function NewTileRequest() {
             <div>
                 <header className="pt-5 text-center">
                     <h4 className="fw-bolder mt-1">unknown tile</h4>
+
+                    <div className="d-flex justify-content-around">
+                        <Form className="d-flex mx-4">
+                            <Form.Group className="mt-5 small col-9 h-50 me-2" controlId="formBasicName">
+                                <Form.Control className="form-round p-2 fw-light" type="text" placeholder="add tile's name"/>
+                            </Form.Group>
+
+                            {/*saves name to tile*/}
+                            <Button className="btn-lightblue fw-light p-2 mt-5 col-3" variant="primary" type="submit">
+                                save
+                            </Button>
+                        </Form>
+                    </div>
                 </header>
 
                 <div className="container d-flex justify-content-around mb-3 pb-5 mt-5 pt-1">
-                    <Card className="tile-rounded w-25">
-                        <Card.Img variant="top" src={puppy_ph} className="tile-rounded" />
-                        <Card.Body>
-                            <Card.Text className="small">
-                                <p className="m-0 fw-bolder">tilestories' photo</p>
-                                <p className="m-0 mt-1 small">latitude aqui</p>
-                                <p className="m-0 small">longitude aqui</p>
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
                     <Card className="tile-rounded w-25">
                         <Card.Img variant="top" src={puppy_ph} className="tile-rounded" />
                         <Card.Body>
