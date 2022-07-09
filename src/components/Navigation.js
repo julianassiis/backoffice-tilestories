@@ -25,7 +25,6 @@ function Navigation() {
                     <NavLink to="/req" className={({ isActive }) => isActive ? activeClassName : notActiveClassName}>requests</NavLink>
 
                     <NavLink to="/tiles" className="link px-2">tiles</NavLink>
-                    <NavLink to="/tilereq" className="link px-2">admin</NavLink>
                     <NavLink to="/Login" className="link px-2">signout</NavLink>
                 </div>
             </Container>

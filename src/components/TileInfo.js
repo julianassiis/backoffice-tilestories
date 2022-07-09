@@ -5,7 +5,6 @@ import '../css/TileRequest.css';
 import Navigation from './Navigation';
 import Button from "react-bootstrap/Button";
 import Card from 'react-bootstrap/Card';
-import {Link} from "react-router-dom";
 
 function TileInfo() {
     return (
@@ -13,7 +12,7 @@ function TileInfo() {
             {Navigation()}
             <div className="mt-5">
                 <header className="pt-5 text-center">
-                    <h4 className="fw-bolder mt-1">tile name</h4>
+                    <h4 className="fw-bolder mt-1">tile information</h4>
                 </header>
 
                 <div className="container d-flex justify-content-center mb-3 pb-5 mt-5 pt-1">
@@ -27,7 +26,8 @@ function TileInfo() {
                     </Card>
 
                     <div className="ms-5">
-                        <div className="d-flex justify-content-around mb-4 mt-2">
+                        <span className="small fw-bolder">name</span>
+                        <div className="d-flex justify-content-around mb-4 mt-0">
                             <input type="text" placeholder="add tile name..." className="form-round p-2 fw-light h-50" />
                         </div>
                         <div className="ms-1">

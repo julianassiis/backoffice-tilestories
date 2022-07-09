@@ -19,7 +19,8 @@ function TileList() {
                 </header>
 
                 <div className="container d-flex flex-wrap justify-content-around mb-3 pb-5 mt-5 pt-1">
-                    {/*repeated card*/}
+
+                    {/*repeat the card*/}
                     <Card className="tile-rounded w-25 m-3 mb-5">
                         <Card.Img variant="top" src={puppy_ph} className="tile-rounded" />
                         <Card.Body>
@@ -36,6 +37,7 @@ function TileList() {
                             </Card.Text>
                         </Card.Body>
                     </Card>
+
                 </div>
             </div>
         </div>
