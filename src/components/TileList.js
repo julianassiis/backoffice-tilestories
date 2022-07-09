@@ -29,7 +29,7 @@ function TileList() {
                                 <p className="m-0 mt-1 small">latitude aqui</p>
                                 <p className="m-0 small">longitude aqui</p>
                                 {/*goes to individual tile info*/}
-                                <Link to="/tileinfo">
+                                <Link to="/tileinfolist">
                                     <Button className="btn-lightblue fw-light p-2 w-100 d-block mt-4" variant="primary" type="submit">
                                         edit info
                                     </Button>

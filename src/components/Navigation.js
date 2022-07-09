@@ -8,8 +8,10 @@ import {NavLink} from 'react-router-dom';
 
 function Navigation() {
 
-    let activeClassName = "link px-2 selected";
-    let notActiveClassName = "link px-2";
+    {/*highlight active navlink*/}
+    const activeRoute = (routeName) => {
+        return window.location.pathname.includes(routeName) ? "link px-2 selected" : "link px-2";
+    };
 
     return (
         <Navbar className="navbar bg-darkblue py-3">
@@ -20,12 +22,9 @@ function Navigation() {
                     </NavLink>
                 </Navbar.Brand>
                 <div className="mt-1 py-2">
-
-                    {/*o estado do active ainda está por resolver*/}
-                    <NavLink to="/req" className={({ isActive }) => isActive ? activeClassName : notActiveClassName}>requests</NavLink>
-
-                    <NavLink to="/tiles" className="link px-2">tiles</NavLink>
-                    <NavLink to="/Login" className="link px-2">signout</NavLink>
+                    <NavLink to="/req" className={activeRoute('req')}>requests</NavLink>
+                    <NavLink to="/tileslist" className={activeRoute('list')}>tiles</NavLink>
+                    <NavLink to="/login" className="link px-2">signout</NavLink>
                 </div>
             </Container>
         </Navbar>

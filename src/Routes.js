@@ -13,8 +13,9 @@ export default function Routes() {
             <Route path="req" element={<Requests/>}/>
             <Route path="tilereq" element={<TileRequest/>}/>
             <Route path="newtilereq" element={<NewTileRequest/>}/>
-            <Route path="tiles" element={<TileList/>}/>
-            <Route path="tileinfo" element={<TileInfo/>}/>
+            <Route path="tileslist" element={<TileList/>}/>
+            <Route path="tileinfolist" element={<TileInfo/>}/>
+            <Route path="login" element={<Login/>}/>
             {/* Catch all unmatched routes */}
             <Route path="*" element={<Login/>}/>
         </Switch>
