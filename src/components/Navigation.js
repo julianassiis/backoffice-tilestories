@@ -12,7 +12,7 @@ function Navigation() {
     let notActiveClassName = "link px-2";
 
     return (
-        <Navbar className="navbar bg-darkblue nav-round-bottom py-3">
+        <Navbar className="navbar bg-darkblue py-3">
             <Container>
                 <Navbar.Brand className="w-25 text-start">
                     <NavLink to="/req">

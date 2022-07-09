@@ -24,22 +24,9 @@ function NewTileRequest() {
             <div>
                 <header className="pt-5 text-center">
                     <h4 className="fw-bolder mt-1">unknown tile</h4>
-
-                    <div className="d-flex justify-content-around">
-                        <Form className="d-flex mx-4">
-                            <Form.Group className="mt-5 small col-9 h-50 me-2" controlId="formBasicName">
-                                <Form.Control className="form-round p-2 fw-light" type="text" placeholder="add tile's name"/>
-                            </Form.Group>
-
-                            {/*saves name to tile*/}
-                            <Button className="btn-lightblue fw-light p-2 mt-5 col-3" variant="primary" type="submit">
-                                save
-                            </Button>
-                        </Form>
-                    </div>
                 </header>
 
-                <div className="container d-flex justify-content-around mb-3 pb-5 mt-5 pt-1">
+                <div className="container d-flex justify-content-center mb-3 pb-5 mt-5 pt-1">
                     <Card className="tile-rounded w-25">
                         <Card.Img variant="top" src={puppy_ph} className="tile-rounded" />
                         <Card.Body>
@@ -50,6 +37,20 @@ function NewTileRequest() {
                             </Card.Text>
                         </Card.Body>
                     </Card>
+
+                    <div className="ms-5">
+                        <div className="d-flex justify-content-around mb-4 mt-2">
+                            <input type="text" placeholder="add tile name..." className="form-round p-2 fw-light h-50" />
+                        </div>
+                        <div className="ms-1">
+                            <p className="fw-bolder mb-0">discovery date</p>
+                            <p className="small">18 jun 2020</p>
+                            <p className="fw-bolder mb-0">tile state</p>
+                            <p className="small">endangered</p>
+                            <p className="fw-bolder mb-0">additional information</p>
+                            <p className="small">kinda cute but also not that cute</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="container w-25">

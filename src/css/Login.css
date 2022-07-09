@@ -19,7 +19,7 @@
 }
 
 .form-round:focus {
-  box-shadow: none;
+  box-shadow: none!important;
   background-color: #e0e0e0;
 }
 
