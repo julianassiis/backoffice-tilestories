@@ -6,13 +6,12 @@ import Navigation from './Navigation';
 import Button from "react-bootstrap/Button";
 import Card from 'react-bootstrap/Card';
 import {Link} from "react-router-dom";
-import Form from "react-bootstrap/Form";
 
 function NewTileRequest() {
     return (
         <div className="App min-vh-100 fw-light">
             {Navigation()}
-            <p className="m-0 pt-4 px-5"><span className="badge bg-yello me-2">16</span> requests pending</p>
+            <p className="m-0 pt-4 px-5"><span className="badge bg-yello me-1">16</span> requests pending</p>
 
             {/*div que aparece quando NAO há pedidos*/}
             {/*<div className="container text-center mt-5 pt-5">
@@ -43,7 +42,7 @@ function NewTileRequest() {
                             <input type="text" placeholder="add tile name..." className="form-round p-2 fw-light h-50" />
                         </div>
                         <div className="ms-1">
-                            <p className="fw-bolder mb-0">discovery date</p>
+                            <p className="fw-bolder mb-0">date</p>
                             <p className="small">18 jun 2020</p>
                             <p className="fw-bolder mb-0">tile state</p>
                             <p className="small">endangered</p>

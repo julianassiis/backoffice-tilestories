@@ -24,7 +24,7 @@ function Navigation() {
                     {/*o estado do active ainda está por resolver*/}
                     <NavLink to="/req" className={({ isActive }) => isActive ? activeClassName : notActiveClassName}>requests</NavLink>
 
-                    <NavLink to="/tilereq" className="link px-2">tiles</NavLink>
+                    <NavLink to="/tiles" className="link px-2">tiles</NavLink>
                     <NavLink to="/tilereq" className="link px-2">admin</NavLink>
                     <NavLink to="/Login" className="link px-2">signout</NavLink>
                 </div>

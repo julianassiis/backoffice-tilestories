@@ -11,7 +11,7 @@ function TileRequest() {
     return (
         <div className="App min-vh-100 fw-light">
             {Navigation()}
-            <p className="m-0 pt-4 px-5"><span className="badge bg-yello me-2">16</span> requests pending</p>
+            <p className="m-0 pt-4 px-5"><span className="badge bg-yello me-1">16</span> requests pending</p>
 
             {/*div que aparece quando NAO há pedidos*/}
             {/*<div className="container text-center mt-5 pt-5">
