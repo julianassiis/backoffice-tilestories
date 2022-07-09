@@ -22,8 +22,6 @@ function TileInfo() {
                         <Card.Body>
                             <Card.Text className="small">
                                 <p className="m-0 fw-bolder">username's photo</p>
-                                <p className="m-0 mt-1 small">latitude aqui</p>
-                                <p className="m-0 small">longitude aqui</p>
                             </Card.Text>
                         </Card.Body>
                     </Card>
@@ -35,10 +33,24 @@ function TileInfo() {
                         <div className="ms-1">
                             <p className="fw-bolder mb-0">date</p>
                             <p className="small">18 jun 2020</p>
-                            <p className="fw-bolder mb-0">tile state</p>
-                            <p className="small">endangered</p>
+                            <p className="fw-bolder mb-0">location</p>
+                            <p className="small mb-0">latitude aqui</p>
+                            <p className="small">longitude aqui</p>
                             <p className="fw-bolder mb-0">additional information</p>
                             <p className="small">kinda cute but also not that cute</p>
+                            <p>editável</p>
+                            <p className="fw-bolder mb-0">tile name</p>
+                            <p className="small">name</p>
+                            <p className="fw-bolder mb-0">tile state</p>
+                            <p className="small">endangered</p>
+                            <p className="fw-bolder mb-0">dificulty</p>
+                            <p className="small">hard</p>
+                            <p className="fw-bolder mb-0">points</p>
+                            <p className="small">200</p>
+                            <p className="fw-bolder mb-0">summary</p>
+                            <p className="small">this is summary</p>
+                            <p className="fw-bolder mb-0">description</p>
+                            <p className="small">this is description</p>
                         </div>
                     </div>
                 </div>
