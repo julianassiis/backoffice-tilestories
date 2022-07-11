@@ -16,6 +16,7 @@ function TileInfo() {
 
                 {/*se não tiver certas infos colocar not found ou algo assim*/}
                 <div className="container d-flex justify-content-center mb-3 pb-5 mt-5 pt-3 align-items-center">
+
                     <img src={puppy_ph} className="tile-rounded" alt="tile photo" />
 
                     <div className="ms-5">

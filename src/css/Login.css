@@ -46,3 +46,11 @@
 .m-adj {
   margin-left: 50px;
 }
+
+.corzinhaaa{
+  color: #111111;
+}
+
+.corzinhaaa:hover{
+  color: #5C75DD;
+}
