@@ -60,7 +60,7 @@ function TileRequest() {
 
         // Your Document Goes Here
         const docData = {
-            "teste": 'este é o azulejo '+apaga,
+            "photo": apaga,
 
         }
 
@@ -94,14 +94,14 @@ function TileRequest() {
         navigate("/norequest");
     }
 
-    function refuse(){
+    const refuse = async()=>{
 
 
         var apaga=answer_array[1];
         var azul=nomeimg[0]//id do azulejo
         var uid=nomeimg[1]
 
-        const myDoc = doc(db, `users/${uid}/azulejo`,azul)
+
 
         // Your Document Goes Here
         const docData = {
@@ -109,11 +109,18 @@ function TileRequest() {
 
         }
 
-        setDoc(myDoc, docData)
-        var desertRef= ref(storage, 'toApprove/'+apaga)
 
-        deleteObject(desertRef).then(() => {
-            console.log("File deleted successfully");
+        var desertRef= ref(storage, 'toApprove/'+apaga)
+        var desertRef2= ref(storage, 'users/'+uid+"/"+apaga)
+
+        await deleteObject(desertRef).then(() => {
+            console.log("File deleted successfully1");
+        }).catch((error) => {
+            // Uh-oh, an error occurred!
+        });
+
+        await deleteObject(desertRef2).then(() => {
+            console.log("File deleted successfully2");
         }).catch((error) => {
             // Uh-oh, an error occurred!
         });
@@ -257,7 +264,7 @@ if (url == undefined){
                         {imaquest}
                         <Card.Body>
                             <Card.Text className="small">
-                                <p className="m-0 fw-bolder">tilestories' photo</p>
+                                <p className="m-0 fw-bolder">username's photo</p>
                                 <p className="m-0 mt-1 small">latitude aqui</p>
                                 <p className="m-0 small">longitude aqui</p>
                             </Card.Text>
@@ -267,7 +274,7 @@ if (url == undefined){
                         {imaaa}
                         <Card.Body>
                             <Card.Text className="small">
-                                <p className="m-0 fw-bolder">username's photo</p>
+                                <p className="m-0 fw-bolder">tilestories' photo</p>
                                 <p className="m-0 mt-1 small">latitude aqui</p>
                                 <p className="m-0 small">longitude aqui</p>
                             </Card.Text>
