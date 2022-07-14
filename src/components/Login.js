@@ -90,10 +90,7 @@ function Login() {
                             <Button onClick={login} className="btn-lightblue fw-light p-2 w-100 d-block mt-5" variant="primary" type="submit">
                                 login
                             </Button>
-
-
-                    <h4> User Logged In: </h4>
-                    {user?.email}
+                    
                 </div>
             </div>
         </div>
